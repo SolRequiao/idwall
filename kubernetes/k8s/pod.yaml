@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: js-app
+  labels:
+    app: js-app
+spec:
+  containers:
+  - name: js-container
+    image: id-wall-sol

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: js-app
+  labels:
+    app: js-app
+spec:
+  selector:
+    matchLabels:
+      app: js-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: js-app
+    spec:
+      containers:
+      - name: js-container
+        image: id-wall-sol
